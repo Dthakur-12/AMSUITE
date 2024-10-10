@@ -1,0 +1,13 @@
+{
+  "short_name": "AM Suite",
+  "name": "Suite for Alutel WebApps",
+  "icons": [{
+    "src": "AMSuiteIcon.ico",
+    "sizes": "64x64 32x32 24x24 16x16",
+    "type": "image/x-icon"
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#296084",
+  "background_color": "#296084"
+}

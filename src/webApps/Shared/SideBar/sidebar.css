@@ -1,0 +1,144 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2000;
+  box-shadow: none;
+}
+.sidebar.collapsed {
+  width: 19px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 305px;
+  }
+  .sidebar-pane {
+    min-width: 260px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 260px;
+  }
+}
+.sidebar-left {
+  left: 0;
+}
+.sidebar-right {
+  right: 0;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    top: 10px;
+    bottom: 10px;
+    transition: width 0.5s;
+  }
+  .sidebar-left {
+    left: 10px;
+  }
+  .sidebar-right {
+    right: 10px;
+  }
+}
+.sidebar-tabs {
+  top: 0;
+  bottom: 0;
+  height: 80px;
+  background-color: #fff;
+}
+.sidebar-left .sidebar-tabs {
+  left: 0;
+}
+.sidebar-right .sidebar-tabs {
+  right: 0;
+}
+.sidebar-tabs {
+  position: absolute;
+  width: 19px;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.sidebar-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sidebar-left .sidebar-content {
+  left: 19px;
+  right: 0;
+}
+.sidebar-right .sidebar-content {
+  left: 0;
+  right: 19px;
+}
+.sidebar.collapsed > .sidebar-content {
+  overflow-y: hidden;
+}
+.sidebar-pane {
+  display: none;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  /* padding: 10px 20px; */
+}
+.sidebar-pane.active {
+  display: block;
+}
+.sidebar-header {
+  margin: -10px -20px 0;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 14.4pt;
+  color: #fff;
+  background-color: #0074d9;
+}
+.sidebar-right .sidebar-header {
+  padding-left: 60px;
+}
+.sidebar-close {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.result {
+  padding:0 !important;
+  /* width: 15em; */
+}
+.ui.search > .results {
+  width: 15em !important;
+}
+/* .sidebar-left .sidebar-close {
+  right: 0;
+}
+.sidebar-right .sidebar-close {
+  left: 0;
+}
+.sidebar-left ~ .sidebar-map {
+  margin-left: 19px;
+}
+.sidebar-right ~ .sidebar-map {
+  margin-right: 19px;
+}
+.sidebar.leaflet-touch {
+  box-shadow: none;
+} */
+

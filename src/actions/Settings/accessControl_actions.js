@@ -1,0 +1,12 @@
+export const REQUEST_MOBILE_SETTINGS = "REQUEST_MOBILE_SETTINGS";
+export const RECEIVE_MOBILE_SETTINGS = "RECEIVE_MOBILE_SETTINGS";
+export const REQUEST_UPDATE_MOBILE_SETTINGS = "REQUEST_UPDATE_MOBILE_SETTINGS";
+export const RECEIVE_UPDATE_MOBILE_SETTINGS = "RECEIVE_UPDATE_MOBILE_SETTINGS";
+export const REQUEST_ERROR_MOBILE_SETTINGS = "REQUEST_ERROR_MOBILE_SETTINGS";
+
+export const requestUpdateMobileSettings = (payload) => {
+  return { type: REQUEST_UPDATE_MOBILE_SETTINGS, payload };
+};
+export const requestMobileSettings = () => {
+  return { type: REQUEST_MOBILE_SETTINGS };
+};

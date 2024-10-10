@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: "#303030 !important";
+  overflow-y: overlay !important;
+  padding-right: 10 !important;
+}
+.App-link {
+  color: #61dafb;
+}
+.App {
+  background-color: "#303030 !important";
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: rgba(238, 238, 238, 0);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(41, 96, 132, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background: rgba(41, 96, 132, 0.4) !important;
+}
+
+.App .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+}
+
+/* Snow Theme */
+.App .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/* Bubble Theme */
+.App .ql-bubble .ql-editor {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.App .ql-editor {
+  min-height: 18em;
+}
+
+.themeSwitcher {
+  margin-top: 0.5em;
+  font-size: small, large, medium, x-large;
+}
+.ql-size-small {
+  font-size: small;
+}
+.ql-size-large {
+  font-size: xx-large;
+}
+
+.ql-size-huge {
+  font-size: 2.5em;
+}
+
+/* LOADER */
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block !important;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+/* END LOADER */

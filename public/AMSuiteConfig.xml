@@ -1,0 +1,7 @@
+
+<ConfigParameters>
+  <ConfigParameter id="AMSuite" value="http://191.233.31.59:12003/api" />  <!--ip del servidor node y web -->
+  <ConfigParameter id="AMSuiteAPI" value="http://191.233.31.59:12003/api" /><!--ip de api .net -->
+  <ConfigParameter id="WebSocket" value="ws://191.233.31.59:12003" /><!--ip del servidor node y web -->
+</ConfigParameters>
+
